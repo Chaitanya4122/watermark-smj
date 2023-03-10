@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watermark Your Photo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Watermark Your Photo</h1>
+    <form>
+      <div class="form-group">
+        <label for="photo">Select a photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required>
+      </div>
+      <div class="form-group">
+        <label for="watermark1">Select the first watermark:</label>
+        <select id="watermark1" name="shrimahalaxmijewellers">
+          <option value="mahalaxmi.png">mahalaxmi</option>
+          <option value="smj.png">SMJ</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="SMJ">Select the second watermark:</label>
+        <select id="watermark2" name="watermark2">
+          <option value="mahalaxmi.png">mahalaxmi 1</option>
+          <option value="smj.png">smj 2</option>
+  <option value="none">none</option>
+</select>
+      </div>
+      <div class="form-group">
+        <label for="size">Watermark size:</label>
+        <input type="range" id="size" name="size" min="10" max="200" value="100" class="form-control-range">
+      </div>
+      <div class="form-group">
+        <label for="opacity">Watermark opacity:</label>
+        <input type="range" id="opacity" name="opacity" min="0" max="200" value="100" class="form-control-range">
+      </div>
+      <button type="submit" class="btn btn-primary">Add Watermarks</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+<button id="downloadButton">Download Image</button>
+
+</body>
+
+</html>
